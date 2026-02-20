@@ -1,0 +1,67 @@
+---
+import Base from "../layouts/Base.astro";
+import Card from "../components/Card.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+---
+
+<Base>
+  <Card>
+    <div class="toggle-wrapper">
+      <ThemeToggle />
+    </div>
+
+    <h1 class="name animate-in" style="--delay: 0ms">Daniel Bate</h1>
+    <p class="role animate-in" style="--delay: 100ms">Technologist / London, UK</p>
+
+    <ul class="interests animate-in" style="--delay: 200ms">
+      <li> > Consumer Apps</li>
+      <li> > Decentralised Tech</li>
+      <li> > Agentic AI & ML</li>
+      <li> > Developer Evangelism</li>
+    </ul>
+
+    <nav class="socials animate-in" style="--delay: 300ms">
+      <a href="https://github.com/danielbate" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://x.com/danielbate" target="_blank" rel="noopener noreferrer">X</a>
+      <a href="https://linkedin.com/in/danielbate" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://instagram.com/danielbate" target="_blank" rel="noopener noreferrer">Insta</a>
+    </nav>
+  </Card>
+</Base>
+
+<style>
+  .toggle-wrapper {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+  }
+
+  .name {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+  }
+
+  .role {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .interests {
+    list-style: none;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .socials {
+    display: flex;
+    gap: 1.25rem;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
+</style>

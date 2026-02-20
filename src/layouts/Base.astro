@@ -1,0 +1,59 @@
+---
+import "../styles/global.css";
+import "../styles/animations.css";
+---
+
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daniel Bate</title>
+    <meta
+      name="description"
+      content="Daniel Bate — Software Engineer based in Bristol, UK"
+    />
+    <link rel="canonical" href="https://danielbate.com/" />
+
+    <meta property="og:title" content="Daniel Bate" />
+    <meta
+      property="og:description"
+      content="Software Engineer based in Bristol, UK"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://danielbate.com/" />
+
+    <meta name="theme-color" content="#0d1117" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <script is:inline>
+      (function () {
+        const stored = localStorage.getItem("theme");
+        const preferred = window.matchMedia("(prefers-color-scheme: light)")
+          .matches
+          ? "light"
+          : "dark";
+        const theme = stored || preferred;
+        document.documentElement.setAttribute("data-theme", theme);
+        const meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) {
+          meta.setAttribute(
+            "content",
+            theme === "dark" ? "#0d1117" : "#f6f8fa",
+          );
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
