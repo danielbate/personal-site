@@ -14,10 +14,10 @@ import ThemeToggle from "../components/ThemeToggle.astro";
     <p class="role animate-in" style="--delay: 100ms">Technologist / London, UK</p>
 
     <ul class="interests animate-in" style="--delay: 200ms">
-      <li> > Consumer Apps</li>
-      <li> > Decentralised Tech</li>
-      <li> > Agentic AI & ML</li>
-      <li> > Developer Evangelism</li>
+      <li><span class="prefix">&gt;</span> Consumer Apps</li>
+      <li><span class="prefix">&gt;</span> Decentralised Tech</li>
+      <li><span class="prefix">&gt;</span> Agentic AI &amp; ML</li>
+      <li><span class="prefix">&gt;</span> Developer Evangelism</li>
     </ul>
 
     <nav class="socials animate-in" style="--delay: 300ms">
@@ -56,6 +56,10 @@ import ThemeToggle from "../components/ThemeToggle.astro";
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+  }
+
+  .prefix {
+    color: var(--accent);
   }
 
   .socials {
