@@ -6,6 +6,7 @@ Source for [danbate.dev](https://danbate.dev). Built with [Astro](https://astro.
 
 ```sh
 pnpm install
+git config core.hooksPath hooks
 ```
 
 ## Development
