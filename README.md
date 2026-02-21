@@ -19,17 +19,11 @@ Runs a local dev server at `localhost:4321`.
 
 ## Deployment
 
-Pushes to `main` trigger CI/CD via GitHub Actions, which builds the site and deploys to IONOS via rsync.
+Pushes to `main` trigger CI/CD via GitHub Actions.
 
 To deploy manually:
 
 ```sh
 cp .env.example .env  # fill in SSH credentials
 ./scripts/deploy.sh
-```
-
-To verify a deployment:
-
-```sh
-./scripts/check-deploy.sh
 ```
