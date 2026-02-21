@@ -44,11 +44,14 @@ body {
 
 a {
   color: var(--accent);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration-color: var(--accent);
 }
 
 @media (max-width: 480px) {
