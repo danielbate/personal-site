@@ -34,7 +34,8 @@ html {
 body {
   background-color: var(--bg);
   color: var(--text);
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,5 +58,10 @@ a:hover {
 @media (max-width: 480px) {
   html {
     font-size: 14px;
+  }
+
+  body {
+    align-items: flex-start;
+    padding-top: 15vh;
   }
 }
