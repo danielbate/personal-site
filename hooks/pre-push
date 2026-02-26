@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-while read -r _ _ remote_ref _; do
-  if [[ "$remote_ref" == "refs/heads/main" ]]; then
-    echo "Error: Direct pushes to main are not allowed. Use a feature branch and PR."
-    exit 1
-  fi
-done
