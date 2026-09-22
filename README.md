@@ -1,6 +1,6 @@
 # Personal Website
 
-Source for [danbate.dev](https://danbate.dev). Built with [Astro](https://astro.build).
+Source for [danbate.dev](https://danbate.dev). 
 
 ## Setup
 
